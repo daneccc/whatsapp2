@@ -17,7 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let navigationController = UINavigationController()
         window = UIWindow(frame: .zero)
         window?.makeKeyAndVisible()
-        window?.rootViewController = SpaceViewController()
+        window?.rootViewController = TableViewController()
         window?.windowScene = windowScene
         
     }

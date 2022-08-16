@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D651596528ABB5F500C04970 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D651596428ABB5F500C04970 /* TableViewController.swift */; };
 		D6DD8A7828A53FC40075D8C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DD8A7728A53FC40075D8C0 /* AppDelegate.swift */; };
 		D6DD8A7A28A53FC40075D8C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DD8A7928A53FC40075D8C0 /* SceneDelegate.swift */; };
 		D6DD8A7C28A53FC40075D8C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DD8A7B28A53FC40075D8C0 /* ViewController.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D651596428ABB5F500C04970 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		D6DD8A7428A53FC40075D8C0 /* SocialMedia_Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialMedia_Challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6DD8A7728A53FC40075D8C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6DD8A7928A53FC40075D8C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				D6DD8AB028A540330075D8C0 /* Utils */,
 				D6DD8AA928A540330075D8C0 /* Services */,
 				D6DD8AAF28A540330075D8C0 /* LoginViewController.swift */,
+				D651596428ABB5F500C04970 /* TableViewController.swift */,
 				D6DD8AAE28A540330075D8C0 /* SpaceViewController.swift */,
 				D6DD8A7728A53FC40075D8C0 /* AppDelegate.swift */,
 				D6DD8A7928A53FC40075D8C0 /* SceneDelegate.swift */,
@@ -313,6 +316,7 @@
 				D6DD8A7C28A53FC40075D8C0 /* ViewController.swift in Sources */,
 				D6DD8A7828A53FC40075D8C0 /* AppDelegate.swift in Sources */,
 				D6DD8AB828A540330075D8C0 /* Constants.swift in Sources */,
+				D651596528ABB5F500C04970 /* TableViewController.swift in Sources */,
 				D6DD8A7A28A53FC40075D8C0 /* SceneDelegate.swift in Sources */,
 				D6DD8AB428A540330075D8C0 /* Users.swift in Sources */,
 				D6DD8AB328A540330075D8C0 /* API.swift in Sources */,

@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import UIKit
 
-class PostListViewModel {
+class PostListViewModel: UITableView {
     
     private(set) var posts: [PostViewModel] = []
     
