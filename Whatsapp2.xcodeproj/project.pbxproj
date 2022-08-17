@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		D6A3735D28AD058000E66FC9 /* Whatsapp2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A3735C28AD058000E66FC9 /* Whatsapp2App.swift */; };
-		D6A3735F28AD058000E66FC9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A3735E28AD058000E66FC9 /* ContentView.swift */; };
+		D6A3735F28AD058000E66FC9 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A3735E28AD058000E66FC9 /* PostView.swift */; };
 		D6A3736128AD058600E66FC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6A3736028AD058600E66FC9 /* Assets.xcassets */; };
 		D6A3736428AD058600E66FC9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6A3736328AD058600E66FC9 /* Preview Assets.xcassets */; };
 		D6A3736E28AD058600E66FC9 /* Whatsapp2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A3736D28AD058600E66FC9 /* Whatsapp2Tests.swift */; };
 		D6A3737828AD058600E66FC9 /* Whatsapp2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A3737728AD058600E66FC9 /* Whatsapp2UITests.swift */; };
 		D6A3737A28AD058600E66FC9 /* Whatsapp2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A3737928AD058600E66FC9 /* Whatsapp2UITestsLaunchTests.swift */; };
+		D6A3738828AD078100E66FC9 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A3738728AD078100E66FC9 /* PostModel.swift */; };
+		D6A3738A28AD1E0F00E66FC9 /* BreakingBadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A3738928AD1E0F00E66FC9 /* BreakingBadModel.swift */; };
+		D6A3738C28AD2E2000E66FC9 /* Loginview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A3738B28AD2E2000E66FC9 /* Loginview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		D6A3735928AD058000E66FC9 /* Whatsapp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Whatsapp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6A3735C28AD058000E66FC9 /* Whatsapp2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whatsapp2App.swift; sourceTree = "<group>"; };
-		D6A3735E28AD058000E66FC9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D6A3735E28AD058000E66FC9 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		D6A3736028AD058600E66FC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6A3736328AD058600E66FC9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D6A3736928AD058600E66FC9 /* Whatsapp2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Whatsapp2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +47,9 @@
 		D6A3737328AD058600E66FC9 /* Whatsapp2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Whatsapp2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6A3737728AD058600E66FC9 /* Whatsapp2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whatsapp2UITests.swift; sourceTree = "<group>"; };
 		D6A3737928AD058600E66FC9 /* Whatsapp2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whatsapp2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D6A3738728AD078100E66FC9 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		D6A3738928AD1E0F00E66FC9 /* BreakingBadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakingBadModel.swift; sourceTree = "<group>"; };
+		D6A3738B28AD2E2000E66FC9 /* Loginview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loginview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +100,10 @@
 		D6A3735B28AD058000E66FC9 /* Whatsapp2 */ = {
 			isa = PBXGroup;
 			children = (
+				D6A3738628AD077100E66FC9 /* Models */,
 				D6A3735C28AD058000E66FC9 /* Whatsapp2App.swift */,
-				D6A3735E28AD058000E66FC9 /* ContentView.swift */,
+				D6A3735E28AD058000E66FC9 /* PostView.swift */,
+				D6A3738B28AD2E2000E66FC9 /* Loginview.swift */,
 				D6A3736028AD058600E66FC9 /* Assets.xcassets */,
 				D6A3736228AD058600E66FC9 /* Preview Content */,
 			);
@@ -125,6 +133,15 @@
 				D6A3737928AD058600E66FC9 /* Whatsapp2UITestsLaunchTests.swift */,
 			);
 			path = Whatsapp2UITests;
+			sourceTree = "<group>";
+		};
+		D6A3738628AD077100E66FC9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D6A3738728AD078100E66FC9 /* PostModel.swift */,
+				D6A3738928AD1E0F00E66FC9 /* BreakingBadModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +274,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6A3735F28AD058000E66FC9 /* ContentView.swift in Sources */,
+				D6A3738C28AD2E2000E66FC9 /* Loginview.swift in Sources */,
+				D6A3735F28AD058000E66FC9 /* PostView.swift in Sources */,
+				D6A3738A28AD1E0F00E66FC9 /* BreakingBadModel.swift in Sources */,
+				D6A3738828AD078100E66FC9 /* PostModel.swift in Sources */,
 				D6A3735D28AD058000E66FC9 /* Whatsapp2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

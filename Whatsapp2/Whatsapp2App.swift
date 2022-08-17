@@ -11,7 +11,7 @@ import SwiftUI
 struct Whatsapp2App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PostView()
         }
     }
 }
