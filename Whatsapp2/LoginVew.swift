@@ -16,6 +16,7 @@ struct LoginView: View {
     @State private var wrongPassword = 0
     
     @State private var showingLoginScreen = false
+    @State private var showingSignUpScreen = false
     
     @State private var navigationViewTitleIsShowing = false
     @State private var navigationViewCurrentTitle = ""
@@ -45,13 +46,16 @@ struct LoginView: View {
                         .border(.red, width: CGFloat(wrongPassword))
                     Button("Login") {
                         autenthicateUser(username: username, password: password)
-                    }
-                    .foregroundColor(.white)
-                    .frame(width: 300, height: 50)
-                    .background(Color.blue)
-                    .cornerRadius(10)
+                    }   .foregroundColor(.white)
+                        .frame(width: 300, height: 50)
+                        .background(Color.blue)
+                        .cornerRadius(10)
                     
                     NavigationLink(destination: PostView(), isActive: $showingLoginScreen) {
+                    }
+                    NavigationLink(destination: SignupView(), isActive: $showingSignUpScreen) {
+                        Text("Create Account")
+                            .padding()
                     }
                 }
             }

@@ -16,7 +16,8 @@ class API {
     static func fetchAllPosts() async -> [Post] {
         //guard let url = URL(string: "https://www.breakingbadapi.com/api/quotes")
         
-        let fetchAllPostsLink = URL(string: "http://adaspace.local/posts")!
+        let fetchAllPostsLink = URL(string: "http://localhost:8080/posts")!
+        //let fetchAllPostsLink = URL(string: "http://adaspace.local/posts")!
         
         do {
             let (data, _) = try await URLSession.shared.data(from: fetchAllPostsLink)
@@ -32,8 +33,10 @@ class API {
 
     static func createUser(name: String, email: String, password: String) async -> Session? {
      
-        let createUserLink = "http://adaspace.local/users"
-        var request = URLRequest(url: URL(string: createUserLink)!)
+        let createUserLink = URL(string: "http://localhost:8080/users")!
+        //let createUserLink = "http://adaspace.local/users"
+        
+        var request = URLRequest(url: createUserLink)
         
         let body: [String:Any] = [
             "name": name,
@@ -61,5 +64,18 @@ class API {
         return nil
         
     }
+    
+//    static func loginUser(username: String, password: String) async -> Session? {
+//
+//
+//        let loginUserLink = "http://adaspace.local/users/login"
+//
+//        let login: String = "\(username):\(password)"
+//        let loginData = login.data(using: String.Encoding.utf8)!
+//        let base64 = logindata.base64EncodedString()
+//
+//        var request = URLRequest (url: URL(string: <#T##String#>))
+//
+//    }
     
 }
