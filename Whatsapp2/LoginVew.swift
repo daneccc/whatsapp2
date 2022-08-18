@@ -54,7 +54,7 @@ struct LoginView: View {
                     NavigationLink(destination: PostView(), isActive: $showingLoginScreen) {
                     }
                     NavigationLink(destination: SignupView(), isActive: $showingSignUpScreen) {
-                        Text("Create Account")
+                        Text("Sign-up")
                             .padding()
                     }
                 }
