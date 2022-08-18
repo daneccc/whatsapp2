@@ -10,7 +10,6 @@
 		D66D762128AE66B000BA701B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66D762028AE66B000BA701B /* Constants.swift */; };
 		D66D762428AE66C100BA701B /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66D762328AE66C100BA701B /* API.swift */; };
 		D66D762628AE772000BA701B /* Autenthication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66D762528AE772000BA701B /* Autenthication.swift */; };
-		D66D762828AE787200BA701B /* LogInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66D762728AE787200BA701B /* LogInViewModel.swift */; };
 		D66D762C28AE7F3E00BA701B /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66D762B28AE7F3E00BA701B /* Session.swift */; };
 		D66D762E28AE7FC400BA701B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66D762D28AE7FC400BA701B /* User.swift */; };
 		D6A3735D28AD058000E66FC9 /* Whatsapp2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A3735C28AD058000E66FC9 /* Whatsapp2App.swift */; };
@@ -45,7 +44,6 @@
 		D66D762028AE66B000BA701B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D66D762328AE66C100BA701B /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		D66D762528AE772000BA701B /* Autenthication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Autenthication.swift; sourceTree = "<group>"; };
-		D66D762728AE787200BA701B /* LogInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewModel.swift; sourceTree = "<group>"; };
 		D66D762B28AE7F3E00BA701B /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		D66D762D28AE7FC400BA701B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D6A3735928AD058000E66FC9 /* Whatsapp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Whatsapp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,7 +105,6 @@
 		D6A3735028AD058000E66FC9 = {
 			isa = PBXGroup;
 			children = (
-				D66D762728AE787200BA701B /* LogInViewModel.swift */,
 				D6A3735B28AD058000E66FC9 /* Whatsapp2 */,
 				D6A3736C28AD058600E66FC9 /* Whatsapp2Tests */,
 				D6A3737628AD058600E66FC9 /* Whatsapp2UITests */,
@@ -308,7 +305,6 @@
 				D6A3738C28AD2E2000E66FC9 /* LoginVew.swift in Sources */,
 				D6A3735F28AD058000E66FC9 /* PostView.swift in Sources */,
 				D6A3738828AD078100E66FC9 /* Post.swift in Sources */,
-				D66D762828AE787200BA701B /* LogInViewModel.swift in Sources */,
 				D6A3735D28AD058000E66FC9 /* Whatsapp2App.swift in Sources */,
 				D66D762C28AE7F3E00BA701B /* Session.swift in Sources */,
 				D66D762128AE66B000BA701B /* Constants.swift in Sources */,
