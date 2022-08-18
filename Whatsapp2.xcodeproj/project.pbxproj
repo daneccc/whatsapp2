@@ -16,7 +16,7 @@
 		D6A3737A28AD058600E66FC9 /* Whatsapp2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A3737928AD058600E66FC9 /* Whatsapp2UITestsLaunchTests.swift */; };
 		D6A3738828AD078100E66FC9 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A3738728AD078100E66FC9 /* PostModel.swift */; };
 		D6A3738A28AD1E0F00E66FC9 /* BreakingBadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A3738928AD1E0F00E66FC9 /* BreakingBadModel.swift */; };
-		D6A3738C28AD2E2000E66FC9 /* Loginview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A3738B28AD2E2000E66FC9 /* Loginview.swift */; };
+		D6A3738C28AD2E2000E66FC9 /* LoginvVew.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A3738B28AD2E2000E66FC9 /* LoginvVew.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +49,7 @@
 		D6A3737928AD058600E66FC9 /* Whatsapp2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whatsapp2UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D6A3738728AD078100E66FC9 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		D6A3738928AD1E0F00E66FC9 /* BreakingBadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakingBadModel.swift; sourceTree = "<group>"; };
-		D6A3738B28AD2E2000E66FC9 /* Loginview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loginview.swift; sourceTree = "<group>"; };
+		D6A3738B28AD2E2000E66FC9 /* LoginvVew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginvVew.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,7 @@
 				D6A3738628AD077100E66FC9 /* Models */,
 				D6A3735C28AD058000E66FC9 /* Whatsapp2App.swift */,
 				D6A3735E28AD058000E66FC9 /* PostView.swift */,
-				D6A3738B28AD2E2000E66FC9 /* Loginview.swift */,
+				D6A3738B28AD2E2000E66FC9 /* LoginvVew.swift */,
 				D6A3736028AD058600E66FC9 /* Assets.xcassets */,
 				D6A3736228AD058600E66FC9 /* Preview Content */,
 			);
@@ -274,7 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6A3738C28AD2E2000E66FC9 /* Loginview.swift in Sources */,
+				D6A3738C28AD2E2000E66FC9 /* LoginvVew.swift in Sources */,
 				D6A3735F28AD058000E66FC9 /* PostView.swift in Sources */,
 				D6A3738A28AD1E0F00E66FC9 /* BreakingBadModel.swift in Sources */,
 				D6A3738828AD078100E66FC9 /* PostModel.swift in Sources */,
