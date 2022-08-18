@@ -10,7 +10,6 @@ import SwiftUI
 struct PostView: View {
     
     @State private var posts = [Post]()
-    @State private var quotes = [Quote]()
     
     var body: some View {
         NavigationView {
@@ -29,32 +28,14 @@ struct PostView: View {
             }
             .navigationTitle("Posts")
             .task {
-                await posts = fetchPosts()
+                await posts = API.fetchAllPosts()
             }
             
             
         }
     }
-    
-    func fetchPosts() async -> [Post] {
-        //guard let url = URL(string: "https://www.breakingbadapi.com/api/quotes")
-        
-        let posts = URL(string: "http://adaspace.local/posts")!
-        
-        do {
-            let (data, _) = try await URLSession.shared.data(from: posts)
-            let decodedResponse = try JSONDecoder().decode([Post].self, from: data)
-            print("Fetched data with success")
-            return decodedResponse
-        } catch {
-            print("Error during the fetching of the data :c")
-        }
-        return []
-        
-    }
         
 }
-    
 
 struct PostView_Previews: PreviewProvider {
     static var previews: some View {
