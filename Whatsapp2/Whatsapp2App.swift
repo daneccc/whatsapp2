@@ -9,8 +9,17 @@ import SwiftUI
 
 @main
 struct Whatsapp2App: App {
+    
+//    @StateObject var authentication = Authentication()
+    
     var body: some Scene {
         WindowGroup {
+//            if authentication.isValidated {
+//                PostView()
+//                    .environmentObject(authentication)
+//            } else {
+//                LoginView()
+//            }
             LoginView()
         }
     }

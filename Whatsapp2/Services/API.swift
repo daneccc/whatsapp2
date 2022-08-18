@@ -16,10 +16,10 @@ class API {
     static func fetchAllPosts() async -> [Post] {
         //guard let url = URL(string: "https://www.breakingbadapi.com/api/quotes")
         
-        let posts = URL(string: "http://adaspace.local/posts")!
+        let fetchAllPostsLink = URL(string: "http://adaspace.local/posts")!
         
         do {
-            let (data, _) = try await URLSession.shared.data(from: posts)
+            let (data, _) = try await URLSession.shared.data(from: fetchAllPostsLink)
             let decodedResponse = try JSONDecoder().decode([Post].self, from: data)
             print("Fetched data with success")
             return decodedResponse
@@ -29,4 +29,37 @@ class API {
         return []
         
     }
+
+    static func createUser(name: String, email: String, password: String) async -> Session? {
+     
+        let createUserLink = "http://adaspace.local/users"
+        var request = URLRequest(url: URL(string: createUserLink)!)
+        
+        let body: [String:Any] = [
+            "name": name,
+            "email": email,
+            "password": password
+        ]
+        
+        request.httpMethod = "POST"
+        let jsonbody = try? JSONSerialization.data(withJSONObject: body)
+        
+        
+        //perguntar para o otávio o que caralho é isso
+        request.httpBody = jsonbody
+        request.allHTTPHeaderFields = [
+            "Content-Type": "application/json"
+        ]
+        
+        do {
+            let (data, response) = try await URLSession.shared.data(for: request)
+            let userData = try JSONDecoder().decode(Session.self, from: data)
+            return userData
+        } catch {
+            print(ADASpaceError.invalidServerResponse)
+        }
+        return nil
+        
+    }
+    
 }
