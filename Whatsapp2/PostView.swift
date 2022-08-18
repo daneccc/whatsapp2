@@ -12,7 +12,6 @@ struct PostView: View {
     @State private var posts = [Post]()
     
     var body: some View {
-        NavigationView {
             List(posts, id: \.id) { post in
                 VStack {
                     VStack(alignment: .leading) {
@@ -26,13 +25,11 @@ struct PostView: View {
                     }
                 }
             }
-            .navigationTitle("Posts")
             .task {
                 await posts = API.fetchAllPosts()
             }
-            
-            
-        }
+            .navigationBarTitle("Posts")
+            .navigationBarHidden(false)
     }
         
 }

@@ -17,6 +17,9 @@ struct LoginView: View {
     
     @State private var showingLoginScreen = false
     
+    @State private var navigationViewTitleIsShowing = false
+    @State private var navigationViewCurrentTitle = ""
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -49,7 +52,6 @@ struct LoginView: View {
                     .cornerRadius(10)
                     
                     NavigationLink(destination: PostView(), isActive: $showingLoginScreen) {
-                        EmptyView()
                     }
                 }
             }
