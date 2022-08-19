@@ -28,8 +28,6 @@ struct PostView: View {
             .task {
                 await posts = API.fetchAllPosts()
             }
-            .navigationBarTitle("Posts")
-            .navigationBarHidden(false)
     }
         
 }

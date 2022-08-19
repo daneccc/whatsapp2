@@ -30,6 +30,8 @@ class API {
         return []
         
     }
+    
+    
 
     static func createUser(name: String, email: String, password: String) async -> Session? {
      

@@ -15,11 +15,11 @@ struct LoginView: View {
     @State private var wrongUsername = 0
     @State private var wrongPassword = 0
     
-    @State private var showingLoginScreen = false
-    @State private var showingSignUpScreen = false
+    @State private var showingLoginScreen   = false
+    @State private var showingSignUpScreen  = false
     
     @State private var navigationViewTitleIsShowing = false
-    @State private var navigationViewCurrentTitle = ""
+    @State private var navigationViewCurrentTitle   = ""
     
     var body: some View {
         NavigationView {
@@ -51,7 +51,7 @@ struct LoginView: View {
                         .background(Color.blue)
                         .cornerRadius(10)
                     
-                    NavigationLink(destination: PostView(), isActive: $showingLoginScreen) {
+                    NavigationLink(destination: HomeView(), isActive: $showingLoginScreen) {
                     }
                     NavigationLink(destination: SignupView(), isActive: $showingSignUpScreen) {
                         Text("Sign-up")
